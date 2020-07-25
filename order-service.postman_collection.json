@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "8307ff0f-19ce-4c0b-846e-bffaada680c4",
+		"name": "order-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/orderItems/orders/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/orderItems/orders/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orderItems",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orderItems",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"orderId\": 4,\r\n        \"productCode\": 490,\r\n        \"productName\": \"stu\",\r\n        \"quantity\": 7\r\n    },\r\n    {\r\n        \"orderId\": 5,\r\n        \"productCode\": 456,\r\n        \"productName\": \"tyy\",\r\n        \"quantity\": 8\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orderItems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orderItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/orderItems",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"Srikanth\",\r\n    \"orderDate\": \"2020-08-13\",\r\n    \"shippingAddress\": \"hyd\",\r\n    \"total\": 10.0,\r\n    \"orderItems\": [\r\n        {\r\n            \"productCode\": 200,\r\n            \"productName\": \"stu\",\r\n            \"quantity\": 7\r\n        },\r\n        {\r\n            \"productCode\": 300,\r\n            \"productName\": \"MMM\",\r\n            \"quantity\": 8\r\n        },\r\n        {\r\n            \"productCode\": 490,\r\n            \"productName\": \"yyy\",\r\n            \"quantity\": 89\r\n        },\r\n        {\r\n            \"productCode\": 6778,\r\n            \"productName\": \"tytiy\",\r\n            \"quantity\": 23\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/orderItems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"orderItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/order/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/order/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
